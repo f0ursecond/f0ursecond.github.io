@@ -1,0 +1,12 @@
+<h1>TikTok Callback</h1>
+<pre id="o"></pre>
+<script>
+    const p = new URLSearchParams(location.search);
+    document.getElementById("o").textContent =
+        "code=" +
+        p.get("code") +
+        "\nscopes=" +
+        p.get("scopes") +
+        "\nerror=" +
+        p.get("error");
+</script>
